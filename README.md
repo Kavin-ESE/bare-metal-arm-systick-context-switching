@@ -13,7 +13,7 @@ This project manually builds the core of an RTOS-like scheduler:
 - Context restoration using the Process Stack Pointer (PSP)  
 - Switching between `main1`, `main2`, and `main3` tasks
 
-This allows each task to run independently as if it had its own processor.
+This allows each task to run independently as if it had its own processor
 
 # Key Concepts Demonstrated
 
