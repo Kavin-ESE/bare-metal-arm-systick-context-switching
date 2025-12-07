@@ -1,6 +1,6 @@
-# Cooperative Task Scheduler on ARM Cortex-M (Assembly)
+# Task Scheduler on ARM Cortex-M (Assembly)
 
-This project implements a minimal cooperative task scheduler on an ARM Cortex-M processor using pure assembly language. It demonstrates how context switching works internally by manually saving and restoring CPU registers, programming the SysTick timer, and managing multiple task stacks.
+This project implements a minimal task scheduler on an ARM Cortex-M processor using pure assembly language. It demonstrates how context switching works internally by manually saving and restoring CPU registers, programming the SysTick timer, and managing multiple task stacks.
 
 # Overview
 
