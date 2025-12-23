@@ -1,21 +1,24 @@
-FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
+FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get install -y \
-    gcc-arm-none-eabi \
-    gdb-multiarch \
-    qemu-system-arm \
-    make \
-    binutils-arm-none-eabi \
-    python3 \
-    python3-pip \
-    wget \
-    git \
-    && rm -rf /var/lib/apt/lists/*
+RUN sudo apt-get update
+RUN sudo apt-get install --no-install-recommends -y \
+  sudo \
+  binutils-common \
+  make \
+  git-core \
+  wget \
+  tree \
+  build-essential \
+  python3 \
+  python3-dev \
+  python3-pip \
+  binutils \
+  make \
+  qemu-system-arm \
+  gcc-arm-none-eabi \
+  gdb-multiarch
 
-RUN pip3 install pygments
-
-RUN wget -O /root/.gdbinit https://git.io/.gdbinit
-
-SHELL ["/bin/bash", "-c"]
+# terminal colors with xterm
+ENV TERM xterm
