@@ -46,7 +46,7 @@ Each task has its own **pre-filled stack** representing a "fake" initial state:
 
 # 📂 Project Structure
 .
-├── main.S      Assembly source
-├── linker.ld   Memory mapping
-├── Makefile    Build rules
-└── README.md   Documentation
+├── iron_boot.S  Assembly source(Booting CPU & Tasks)
+├── map.ld       Memory mapping
+├── Makefile     Build rules(Automation)
+└── README.md    Documentation
